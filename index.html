@@ -7,6 +7,9 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -131,7 +134,8 @@
                         <li class="syllabus-item">Sequences and Series: convergence, MCT, BWT, Cauchy sequences</li>
                         <li class="syllabus-item">Series Tests: convergence tests, special series</li>
                         <li class="syllabus-item">Limits and Continuity: types, differentiability</li>
-                    </ul>
+                    </ul></br>
+                    <a href="/Lecture 1.pdf" style="color: blue;">Click Here</a> for study materials.
                 </div>
                 <div>
                     <h3 class="text-xl font-semibold text-gray-800 mb-3">Abstract Algebra</h3>
@@ -140,13 +144,15 @@
                         <li class="syllabus-item">Group examples: $S_{n}$, $A_{n}$, $D_{n}$, $Q_{8}$</li>
                         <li class="syllabus-item">Homomorphism, Isomorphism</li>
                         <li class="syllabus-item">Fields and Rings</li>
-                    </ul>
+                    </ul></br>
+                    <a href="" style="color: blue;">Click Here</a> for study materials.
                     <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">Linear Algebra</h3>
                     <ul class="list-disc list-inside">
                         <li class="syllabus-item">Matrices and systems, diagonalization</li>
                         <li class="syllabus-item">Vector spaces, fields, subspaces</li>
                         <li class="syllabus-item">Span, linear independence, basis, dimension</li>
-                    </ul>
+                    </ul></br>
+                    <a href="" style="color: blue;">Click Here</a> for study materials.
                 </div>
             </div>
         </section>
@@ -181,21 +187,21 @@
                             </tr>
                             <tr class="border-t border-gray-200 bg-gray-50">
                                 <td class="py-3 px-4">29 July</td>
-                                <td class="py-3 px-4">AJJ</td>
+                                <td class="py-3 px-4">AJ</td>
                                 <td class="py-3 px-4">PH</td>
-                                <td class="py-3 px-4">AJJ</td>
+                                <td class="py-3 px-4">AJ</td>
                                 <td class="py-3 px-4">Tutorial</td>
                             </tr>
                             <tr class="border-t border-gray-200">
                                 <td class="py-3 px-4">30 July</td>
-                                <td class="py-3 px-4">AJJ</td>
+                                <td class="py-3 px-4">AJ</td>
                                 <td class="py-3 px-4">RT</td>
-                                <td class="py-3 px-4">AJJ</td>
+                                <td class="py-3 px-4">AJ</td>
                                 <td class="py-3 px-4">Tutorial</td>
                             </tr>
                             <tr class="border-t border-gray-200 bg-gray-50">
                                 <td class="py-3 px-4">31 July</td>
-                                <td class="py-3 px-4">AJJ</td>
+                                <td class="py-3 px-4">AJ</td>
                                 <td class="py-3 px-4">RT</td>
                                 <td class="py-3 px-4">RT</td>
                                 <td class="py-3 px-4">Tutorial</td>
@@ -213,9 +219,9 @@
                 <div class="mt-6 text-base">
                     <p><strong>Speaker Abbreviations:</strong></p>
                     <ul class="list-disc list-inside ml-4">
-                        <li>PH - Dr. Pranav Haridas</li>
-                        <li>RT - Dr. Renjith T</li>
-                        <li>AJJ - Prof. A. J. Jayanthan</li>
+                        <li>PH - Dr. Pranav Haridas (Algebra)</li>
+                        <li>RT - Dr. Renjith T (Analysis)</li>
+                        <li>AJ - Prof. A. J. Jayanthan (Linear Algebra)</li>
                     </ul>
                     <p class="mt-4"><strong>Tutorial Tutors:</strong></p>
                     <ul class="list-disc list-inside ml-4">
@@ -252,6 +258,23 @@
             <p class="text-sm sm:text-base mt-1">Funded by the PM-USHA scheme</p>
         </div>
     </footer>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true,
+                packages: ['base', 'ams']
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process'
+            },
+            loader: {
+                load: ['[tex]/ams']
+            }
+        };
+    </script>
 
 </body>
 </html>
